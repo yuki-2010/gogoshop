@@ -1,18 +1,57 @@
-.gogo-header {
+.gogo-index{
+  .gogo-header {
     height:50px;
+    width:100vw;
+    //为什么给了固定定位,不给宽度会挤在一起不撑开
     background-color: var(--themeColor);
     display:flex;
     justify-content: center;
     align-items: center;
+    padding:0 10px;
+    position:fixed;
+    top:0;
+    left:0;
     .icon.icon-menu {
-        
+        flex:1;
     }
   
     .gogo-header-text {
-  
+      text-align: center;
+      flex:8;
+      color:white;
+      font-size:20px;
+      font-weight: normal;
     }
   
     .icon.icon-sosoh {
-  
+      flex:1;
+      display: block;
     }
   }
+.gogo-index-classify {
+  margin-top:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:124px;
+  width:100vw;
+  margin-bottom:10px;
+  border-bottom: 1px solid #e6e6e6;
+  .index-image-item {
+    flex:1;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width:56px;
+      height:56px;
+    }
+
+    span {
+      margin-top:5px;
+      font-size:14px;
+    }
+  }
+}
+}
