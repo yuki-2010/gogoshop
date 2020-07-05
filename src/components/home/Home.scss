@@ -28,8 +28,27 @@
       display: block;
     }
   }
-.gogo-index-classify {
+.gogo-index-swiper {
   margin-top:50px;
+  .swiper-container {
+    .swiper-wrapper {
+      height:160px;
+      width:100vw;
+      .swiper-slide {
+
+        img {
+          width:100vw;
+          height:160px;
+        }
+      }
+    }
+
+    .swiper-pagination {
+
+    }
+  }
+}
+.gogo-index-classify {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +56,7 @@
   width:100vw;
   margin-bottom:10px;
   border-bottom: 1px solid #e6e6e6;
+  background-color: white;
   .index-image-item {
     flex:1;
     flex-direction: column;
@@ -51,6 +71,96 @@
     span {
       margin-top:5px;
       font-size:14px;
+    }
+  }
+}
+.gogo-index-customer {
+  height:170px;
+  width:100vw;
+  padding:10px;
+  margin:10px 0px;
+  background-color:white;
+  h3 {
+    height:28px;
+    font-size:17.5px;
+  }
+  .index-customer-content {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    .index-customer-item {
+      flex:1;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      img.index-customer-img {
+        height:71px;
+        width:71px;
+        border-radius:50%;   
+  }
+  
+      span {
+        margin-top:5px;
+        font-size:14px;
+      }
+    }
+  }
+
+}
+.gogo-index-promotion {
+  margin-bottom:66px;
+  h3 {
+    height:50px;
+    border:1px solid #e6e6e6;
+    font-size:17.5px;
+    background-color: white;
+    padding:10px;
+  }
+  .index-product-container {
+    width: 100vw;
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom:5px;
+    padding:10px;
+    margin-right:-4px;
+    .index-product-item {
+      // 这个每个产品的容器,不能给高度
+      width:114px;
+      background-color: white;
+      margin-right:4px;
+      margin-bottom:5px;
+      .index-product-img {
+        width:114px;
+        height:102px;
+      }
+      h4 {
+        margin:5px;
+        height:32px;
+        // 设置标题只显示多少行,剩下的隐藏并以...显示
+        overflow:hidden;
+        text-overflow:ellipsis;
+        // 规定当文本溢出包含元素时发生的事情
+        display:-webkit-box;
+        //自适应布局
+        -webkit-line-clamp: 2;
+        //显示的行数
+        -webkit-box-orient: vertical;
+      }
+
+      .index-product-price {
+        font-size:15px;
+        color:red;
+        margin:5px;
+      }
+
+      .index-product-oldprice {
+        font-size:12px;
+        margin:5px;
+        color:rgb(166, 166, 166);
+        text-decoration:line-through;
+      }
     }
   }
 }

@@ -6,6 +6,10 @@ div.gogo-footer-nav {
     align-items: center;
     position:fixed;
     bottom: 0;
+    background-color: white;
+    .activeTab {
+      color:var(--themeColor)
+    }
     div.gogo-footer-home {
       flex:1;
       display:flex;
